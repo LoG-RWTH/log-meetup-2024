@@ -6,24 +6,72 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+.photo {
+    max-width: 100%;
+    position: relative;
+    top: -1px;
 }
 
-.introduction, .programs, .organizers {
-    margin: 20px;
+.container {
+    max-width: 1000px; /* Set maximum width for the content */
+    margin: 0 auto;    /* Center the container */
+    padding: 0 20px;   /* Add padding inside the container */
+}
+
+header {
+    background-image: url('images/katschof_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    height: 300px;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 6em; /* Adjust the font size here */
+    margin: 0; /* Optional: adjust margin if necessary */
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+header h2 {
+    position: relative;
+    color: #fff;
+    font-size: 0.95em; /* Adjust the font size here */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.introduction, .programs {
+    margin: 20px auto;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.organizers {
+    margin: 20px auto;
+    padding: 20px;
+}
+
 h2 {
     color: #333;
+    font-size: 2.6em; /* Adjust the font size here */
+    font-weight: normal;
 }
 
 table {
@@ -72,4 +120,136 @@ th {
     margin: 10px 0 5px;
     font-size: 1.2em;
     color: #333;
+}
+ul {
+    list-style: none;
+  }
+
+/* =============================================================================
+   SPEAKER
+   ========================================================================== */
+.speakers-list {
+    margin: 20px auto;
+    padding: 20px;
+}
+.speakers-item {
+    position: relative;
+    min-height: 180px;
+    padding-left: 180px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #e7e7e7;
+}
+.speaker-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 160px;
+    height: 160px;
+}
+.speakers-name {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+.speakers-bio,
+.speech-abst {
+    font-size: 1.0em;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    display: block
+}
+.speakers-item p {
+    font-size: 1.0em;
+}
+.speakers-list {
+    padding-top: 30px;
+}
+
+.footer {
+    margin-top: 1em;
+}
+
+/* =============================================================================
+   SPONSORS
+   ========================================================================== */
+.sponsor--link,
+.partner-link {
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+.sponsor--link:hover,
+.sponsor--link:focus,
+.partner-link:hover,
+.partner-link:focus {
+    border-color: #f0a303;
+}
+
+/* partners */
+.sponsor-item,
+.partner-item {
+    margin: 0 5px 10px 0;
+}
+.sponsor--link,
+.partner-link {
+    width: 95px;
+    height: 95px;
+    line-height: 95px;
+    margin-bottom: 95px;
+}
+
+/* /* ============================================================================= */
+   /* Venue */
+   /* ========================================================================== */ */
+.venue {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.venue ul {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    padding: 0em;
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+    
+.venue li {
+    list-style-type: disc;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    padding: 0em;
+}
+
+    
+.venue p {
+    margin-bottom: 20px;
+}
+    
+.venue code {
+    color: #214f87;
+    font-family: 'Courier New', Consolas, monospace !important;
+}
+/* =============================================================================
+   SPEAKER
+   ========================================================================== */
+.speaker-photo .photo {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.speakers-item:hover .speaker-photo .photo {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.speech-time {
+    color: #fff;
+    background: #2b2b2b;
+    border-radius: 8px
 }
