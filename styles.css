@@ -253,3 +253,48 @@ ul {
     background: #2b2b2b;
     border-radius: 8px
 }
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+    header {
+        height: 200px; /* Reduce header height for smaller screens */
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 2em; /* Reduce title size */
+    }
+
+    .container {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 10px;              /* Reduce gap between cards */
+    }
+
+    .card {
+        margin-bottom: 10px; /* Reduce space between rows */
+    }
+
+    table, th, td {
+        font-size: 14px; /* Make table content smaller */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 150px; /* Further reduce header height */
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Further reduce title size */
+    }
+
+    .card img {
+        width: 80px;  /* Reduce image size */
+        height: 80px; /* Reduce image size */
+    }
+}
