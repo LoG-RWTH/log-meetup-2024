@@ -339,15 +339,10 @@ iframe {
         flex-direction: column;
         gap: 5px;             
     }
-    .speaker-photo {
-        width: 40px;
-        height: 40px;
-        margin-right: 5px;
-    }
     .speakers-bio,
     .speech-abst {
         font-size: 0.8em;
-        display: block
+        display: block;
     }
 }
 
