@@ -319,7 +319,7 @@ iframe {
     header h2 {
         position: relative;
         color: #fff;
-        font-size: 1.0em; /* Adjust the font size here */
+        font-size: 0.48em; /* Adjust the font size here */
     }
     h2 {
         color: #333;
@@ -331,21 +331,45 @@ iframe {
         width: 80px;  /* Reduce image size */
         height: 80px; /* Reduce image size */
     }
+    .container {
+        padding: 0 6px; /* Reduce padding on smaller screens */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 5px;              /* Reduce gap between cards */
+    }
 }
-@media (max-width: 480px) {
-    /* speakers */
-    .speaker-photo .photo {
-      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07);
+@media (max-width: 320px) {
+    header {
+        height: 150px; /* Further reduce header height */
+        padding: 30px 0;
     }
-    .speech-title {
-      font-weight: bolder;
+
+    header h1 {
+        font-size: 1.1em; /* Further reduce title size */
     }
-    .speech-time {
-      color: #2b2b2b;
-      background: transparent;
-      font-weight: bolder;
+    header h2 {
+        position: relative;
+        color: #fff;
+        font-size: 0.48em; /* Adjust the font size here */
     }
-    .github-link {
-      display: none;
+    h2 {
+        color: #333;
+        font-size: 1.0em; /* Adjust the font size here */
+        font-weight: normal;
     }
-  }
+
+    .card img {
+        width: 80px;  /* Reduce image size */
+        height: 80px; /* Reduce image size */
+    }
+    .container {
+        padding: 0 6px; /* Reduce padding on smaller screens */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 5px;              /* Reduce gap between cards */
+    }
+}
