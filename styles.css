@@ -314,7 +314,7 @@ iframe {
     }
 
     header h1 {
-        font-size: 1.1em; /* Further reduce title size */
+        font-size: 0.1em; /* Further reduce title size */
     }
     header h2 {
         position: relative;
