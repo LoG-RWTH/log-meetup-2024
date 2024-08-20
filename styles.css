@@ -340,7 +340,7 @@ iframe {
         gap: 5px;              /* Reduce gap between cards */
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 321px) {
     header {
         height: 150px; /* Further reduce header height */
         padding: 30px 0;
