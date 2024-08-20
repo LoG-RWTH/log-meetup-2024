@@ -310,6 +310,7 @@ iframe {
     header {
         height: 150px;
         padding: 30px 0;
+        margin: 100;
     }
 
     header h1 {
@@ -322,7 +323,7 @@ iframe {
     }
     h2 {
         color: #333;
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: normal;
     }
 
@@ -342,7 +343,12 @@ iframe {
         width: 40px;
         height: 40px;
         margin-right: 5px;
-      }
+    }
+    .speakers-bio,
+    .speech-abst {
+        font-size: 0.8em;
+        display: block
+    }
 }
 
 @media (max-width: 480px) {
