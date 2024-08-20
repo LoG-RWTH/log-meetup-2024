@@ -318,11 +318,11 @@ iframe {
     header h2 {
         position: relative;
         color: #fff;
-        font-size: 0.48em; /* Adjust the font size here */
+        font-size: 0.70em; /* Adjust the font size here */
     }
     h2 {
         color: #333;
-        font-size: 1.0em; /* Adjust the font size here */
+        font-size: 1.2em; /* Adjust the font size here */
         font-weight: normal;
     }
 
