@@ -339,11 +339,6 @@ iframe {
         flex-direction: column;
         gap: 5px;             
     }
-    .speakers-bio,
-    .speech-abst {
-        font-size: 0.8em;
-        display: block;
-    }
 }
 
 @media (max-width: 480px) {
