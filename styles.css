@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-image: url('images/katschof_2.jpg');
+    background-image: url('images/burg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +27,7 @@ header {
     padding: 60px 0;
     text-align: center;
     position: relative;
-    height: 300px;
+    height: 450px;
 }
 
 header h1 {
@@ -82,6 +82,9 @@ table {
 table, th, td {
     border: 1px solid #ddd;
 }
+
+table.fixed { table-layout:fixed; }
+table.fixed td { overflow: hidden; }
 
 th, td {
     padding: 8px;
@@ -221,6 +224,12 @@ ul {
     margin-bottom: 0em;
     margin-left: 1em;
     padding: 0em;
+}
+
+.venue img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
 }
 
     
