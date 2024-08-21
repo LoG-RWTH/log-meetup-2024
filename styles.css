@@ -35,6 +35,8 @@ header h1 {
     z-index: 1;
     font-size: 5em; /* Adjust the font size here */
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+    max-width: 1000px; /* Set maximum width for the content */
+    margin: 0 auto;    /* Center the container */
 }
 
 header h2 {
@@ -319,20 +321,19 @@ iframe {
     header {
         height: 150px;
         padding: 30px 0;
-        margin: 100;
     }
 
     header h1 {
-        font-size: 1.1em;
+        font-size: 1.9em;
     }
     header h2 {
         position: relative;
         color: #fff;
-        font-size: 0.70em;
+        font-size: 0.80em;
     }
     h2 {
         color: #333;
-        font-size: 1.5em;
+        font-size: 1.9em;
         font-weight: normal;
     }
 
