@@ -33,7 +33,7 @@ header {
 header h1 {
     position: relative;
     z-index: 1;
-    font-size: 6em; /* Adjust the font size here */
+    font-size: 5em; /* Adjust the font size here */
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
