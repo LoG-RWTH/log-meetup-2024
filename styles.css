@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-image: url('images/burg.jpeg');
+    background-image: url('images/dom.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +27,7 @@ header {
     padding: 60px 0;
     text-align: center;
     position: relative;
-    height: 450px;
+    height: 600px;
 }
 
 header h1 {
